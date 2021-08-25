@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="stylexx.css">
+	<link  rel="icon" href="picture/2f8c7e9f42c7781c3846b435475f92af-plano-de-fruta-de-manzana.png" type="image/png">
+	<title>Fruteria La Esperanza</title>
+	<!------FUENTES--->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<header class="header">
+		<div class="container logo-nav-container">
+			<a href="indexx.html" class="logo col-sm-12 col-xs-12">Fruteria La Esperanza</a>
+			<button class="boton-lg-hide col-sm-12 col-xs-12" id="verMenu" onclick="despliegaMenu()">Ver menú</button>
+			<nav class="navigation dismiss-nav">
+				<ul class="show">
+					<li class="col-sm-6 col-xs-12"><a href="indexx.html">Inicio</a></li>
+					<li class="col-sm-6 col-xs-12"><a href="about.html">Acerca de Nosotros</a></li>
+					<li class="col-sm-6 col-xs-12"><a href="servicios.html">Servicios</a></li>
+					<li class="col-sm-6 col-xs-12"><a href="galeria.html">Galeria</a></li>
+				</ul>
+			</nav>
+			
+		</div>
+		
+	</header>
+<body>
+<!----SLIDERR-->
+<main>
+	<p id="punto-salvavidas">.</p>
+	<!---IMAGEN 1-->
+<div class="boton-selector col-lg-12 hide-boton-selector">
+	<button data-fondo="blur-lg-frutas-12" id="btnS1" class="bolita">1</button><!---BOTON SELECTOR 1--->
+	<button data-fondo="blur-lg-exp-12" id="btnS2" class="bolita">2</button><!---BOTON SELECTOR 2--->
+	<button data-fondo="blur-lg-prod-12" id="btnS3" class="bolita">3</button><!---BOTON SELECTOR 3--->
+</div>
+</main>
+
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!------EVENTOS PARA EL SLIDER CON JQUERY-------->
+	<script>
+		$(function(){
+			var $main = $('main');
+			$main.find('button').on('click', function(){
+				var boton = $(this); 
+				var claseAAplicar = boton.data('fondo'); 
+				aplicarClase(claseAAplicar);
+			});
+			function aplicarClase(unaclase){
+				$main.removeClass(); 
+				$main.addClass(unaclase); 
+			}
+			//INICIALIZADOR
+			aplicarClase('blur-lg-frutas-12');
+		});
+	</script>
+</div>
+<section id="seccion1" class="fila">
+	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+		<center>
+			<img src="picture/img14.jpg">
+			<h2>Lácteos</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+		</center>
+	</div>
+	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+		<center>
+			<img src="picture/img13.jpg">
+			<h2>Carnes</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+		</center>
+	</div>
+	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+		<center>
+			<img src="picture/img15.jpg">
+			<h2>Desechables y materias primas</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+		</center>
+	</div>
+</section>
+<footer class="footer">
+	<p id="texto-chiquito">Frutería La Esperanza 2012, todos los derechos reservados. <br>
+	Calle 2, Av Vista Hermosa #601, Reynosa, Tamaulipas</p>
+	<img id="icono-face" src="picture/iconFace.png"><a href="https://www.facebook.com/Fruteria-la-esperanza-114872466980254">Frutería la esperanza</a>
+	<p>Página creada por Lili Flores</p>
+</footer>
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

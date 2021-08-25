@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ffff;
+    overflow-x: hidden;
+}
+h4{
+    font-family: cuprum;
+    font-size: 30px; 
+    margin: 20px;
+    margin-top: 25px;
+    text-align: center; 
+}
+#bug-cont{
+    text-align: center; 
+    align-items: center; 
+}
+#link-bug{ 
+    font: cuprum;
+    text-decoration: none; 
+    font-style: italic;
+    color: orange;
+    font-size: 15px;
+}
+.gallery-container{
+    width: 80%;
+    margin:100px auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: repeat(2,300px);
+}
+
+.gallery-container .gallery-card{overflow: hidden};
+
+.gallery-container .gallery-card a{
+    width: 100%;
+    height:100%;
+}
+.gallery-container .gallery-card a > img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.gallery-container .gallery-card a > img:hover{
+    transform: scale(1.5) rotate(30deg);
+}

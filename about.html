@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="stylexx.css">
+	<link  rel="icon" href="picture/2f8c7e9f42c7781c3846b435475f92af-plano-de-fruta-de-manzana.png" type="image/png">
+	<title>Acerca de nosotros</title>
+	<!------FUENTES--->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap" rel="stylesheet"> 
+
+    <style>
+
+    	.contenedor-about{
+    		font-family: Cuprum; 
+    		margin: 0;
+}
+        #fotoUno{
+        	width: 100%;
+        	object-fit: cover; 
+
+        }
+        .botoncitos{
+        	align-items: center; 
+        	background-color: grey; 
+        }
+        #boton-rojo:hover, #boton-verde:hover, #boton-blanco:hover{
+        	transition: all 0.4s linear;
+	        border-radius: 5px;
+	        background-color: grey; 
+        }
+        #boton-rojo{
+        	background: rgb( 237, 60, 29);
+        	font-family: Cuprum; 
+        	font-size: 30px; 
+        }
+         #boton-verde{
+        	background: rgb(  106, 203, 33);
+        	font-family: Cuprum; 
+        	font-size: 30px; 
+        }
+         #boton-blanco{
+        	background: rgb(230, 244, 219);
+        	font-family: Cuprum; 
+        	font-size: 30px; 
+        }
+         #cuadrito-rojo{
+        	background: rgb(253, 112, 65);
+        	font-family: Cuprum; 
+        	font-size: 18px; 
+        	visibility: hidden;
+        }
+         #cuadrito-verde{
+        	background: rgb(120, 188, 86);
+        	font-family: Cuprum; 
+        	font-size: 18px; 
+        	visibility: hidden;
+        }
+         #cuadrito-blanco{
+        	background: rgb(223, 233, 223);
+        	font-family: Cuprum; 
+        	font-size: 18px; 
+        	visibility: hidden;
+        }
+    </style>
+</head>
+<header class="header">
+		<div class="container logo-nav-container">
+			<a href="indexx.html" class="logo col-sm-12 col-xs-12">Fruteria La Esperanza</a>
+			<button class="boton-lg-hide col-sm-12 col-xs-12" id="verMenu" onclick="despliegaMenu()">Ver Menu</button>
+			<nav class="navigation dismiss-nav">
+				<ul class="show">
+					<li class="col-sm-6 col-xs-12"><a href="indexx.html">Inicio</a></li>
+					<li class="col-sm-6 col-xs-12"><a href="about.html">Acerca de Nosotros</a></li>
+					<li class="col-sm-6 col-xs-12"><a href="servicios.html">Servicios</a></li>
+					<li class="col-sm-6 col-xs-12"><a href="galeria.html">Galeria</a></li>
+				</ul>
+			</nav>
+			
+		</div>
+		
+	</header>
+<body>
+	<div class="contenedor-about col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<h2>Un poco de nuestra historia</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<img id="fotoUno" src="picture/img17.PNG">
+	</div>
+	<article>
+		<div class="botoncitos">
+			<button class="col-lg-4 col-md-4 col-sm-12 col-xs-12" id="boton-rojo" onclick="showRed()">¡Llámanos!</button>
+			<button class="col-lg-4 col-md-4 col-sm-12 col-xs-12" id="boton-verde" onclick="showGreen()">¡Escríbenos!</button>
+			<button class="col-lg-4 col-md-4 col-sm-12 col-xs-12" id="boton-blanco" onclick="showWhite()">¡Vísitanos!</button>
+		</div>
+		<div class="cuadritos">
+			<div id="cuadrito-rojo" class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<p>8991082896</p><br>
+				<p>Con un horario de atención de 7:30am a 9:00pm</p>
+			</div>
+			<div id="cuadrito-verde" class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<p>fruteria_laesperanza@yahoo.com</p><br>
+				<p>Con un horario de atención de 7:30am a 4:00pm</p>
+			</div>
+			<div id="cuadrito-blanco" class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<p>7:30am - 9:00pm</p><br>
+				<p>Calle 2, Av Vista Hermosa #601, Reynosa, Tamaulipas</p>
+			</div>
+		</div>
+	</article>
+
+	
+	<footer class="footer col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<p id="texto-chiquito">Frutería La Esperanza 2012, todos los derechos reservados. <br>
+	Calle 2, Av Vista Hermosa #601, Reynosa, Tamaulipas</p>
+	<img id="icono-face" src="picture/iconFace.png"><a href="https://www.facebook.com/Fruteria-la-esperanza-114872466980254">Frutería la esperanza</a>
+	<p>Página creada por Lili Flores</p>
+</footer>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
